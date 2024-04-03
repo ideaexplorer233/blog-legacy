@@ -1,0 +1,6 @@
+footer {
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+    color: var(--text-deep);
+    margin-top: 40px;
+}

@@ -1,0 +1,13 @@
+@import "vars.css";
+
+@import "parts/body.css";
+@import "parts/media.css";
+@import "parts/typo.css";
+@import "parts/links.css";
+
+@import "parts/printable.css";
+
+/* Prevent ugly default light components*/
+* {
+    color-scheme: light dark;
+}

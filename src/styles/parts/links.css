@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+a {
+    background-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.15em;
+    text-decoration-color: transparent;
+    transition: text-decoration-color var(--animation-speed), background-color var(--animation-speed);
+}
+
+a:hover {
+    background-color: var(--link-hover);
+    text-decoration-color: var(--link);
+}

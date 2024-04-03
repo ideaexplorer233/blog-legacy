@@ -1,0 +1,26 @@
+:root {
+    --background-body: #202b38; /* All background */
+    --background: #161f27; /* Elements background*/
+    --background-deep: #1a242f; /* Table even lines */
+
+    --text-main: #dbdbdb;
+    --text-light: #fff; /* Highlight */
+    --text-deep: #a9b1ba; /* Disabled */
+
+    --link: #41adff;
+    --link-hover: var(--background-deep);
+
+    --focus: #0096bfab; /* Blockquote */
+    --border: #526980;
+    --highlight: #efdb43;
+    --selection: #1c76c5;
+
+    --animation-speed: 0.1s;
+
+    --button-base: #0c151c;
+    --button-hover: #040a0f;
+    --scrollbar-thumb: #0c151c;
+    --scrollbar-thumb-hover: #040a0f;
+    --form-placeholder: #a9a9a9;
+    --form-text: #fff;
+}
