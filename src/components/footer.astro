@@ -5,4 +5,10 @@ import "../styles/components/footer.module.css"
 <footer>
     Unless otherwise noted, the content on this page is licensed under
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 Deed</a>
+    <p class="current-time"></p>
 </footer>
+
+<script>
+    document.getElementsByClassName("current-time")[0].innerHTML =
+        "Current ISO Time: " + new Date(Date.now()).toISOString();
+</script>

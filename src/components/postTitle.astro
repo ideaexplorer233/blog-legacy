@@ -1,0 +1,42 @@
+---
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+
+import {Icon} from "astro-icon/components"
+import styles from "../styles/components/title.module.css"
+
+import {postType} from "../content/posts/config";
+const data: postType = Astro.props.data
+
+// FIXME: It should be loaded at client side
+dayjs.extend(relativeTime);
+---
+<h1>{data.title}</h1>
+<div class={styles.info}>
+    {data.author && <div>
+        <Icon name="material-symbols:person-edit-outline-rounded"/>
+        <i>Author: {data.author}</i>
+    </div>}
+    <div>
+        <Icon name="material-symbols:calendar-today-outline-rounded"/>
+        <i>Publish at: <span class="pub-time">{data.pubDate.toISOString()}</span>
+            ({dayjs(data.pubDate).fromNow()})</i>
+    </div>
+    {data.modDate &&
+            <div>
+                <Icon name="material-symbols:edit-calendar-outline-rounded"/>
+                <i>Last edit at: <span class="mod-time">{data.modDate.toISOString()}</span>
+                    ({dayjs(data.modDate).fromNow()})</i>
+            </div>}
+</div>
+<details>
+    <summary>Description</summary>
+    {data.description}
+</details>
+
+<script>
+    let pubTimeElem = document.getElementsByClassName("pub-time")[0];
+    pubTimeElem.innerHTML = new Date(pubTimeElem.textContent).toLocaleString();
+    let modTimeElem = document.getElementsByClassName("mod-time")[0];
+    if (modTimeElem) modTimeElem.innerHTML = new Date(modTimeElem.textContent).toLocaleString();
+</script>

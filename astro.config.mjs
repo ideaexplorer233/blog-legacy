@@ -10,7 +10,10 @@ export default defineConfig({
       {
         include: {
           "material-symbols": [
-              "search"
+              "search",
+              "person-edit-outline-rounded",
+              "calendar-today-outline-rounded",
+              "edit-calendar-outline-rounded"
           ]
         }
       }

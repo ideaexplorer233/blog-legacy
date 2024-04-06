@@ -1,0 +1,7 @@
+.info {
+    > div {
+        display: inline-block;
+        margin-inline: 10px;
+    }
+    color: var(--text-deep);
+}
