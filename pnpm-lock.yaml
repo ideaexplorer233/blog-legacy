@@ -10,7 +10,7 @@ dependencies:
     version: 1.1.76
   astro:
     specifier: ^4.5.5
-    version: 4.5.16
+    version: 4.5.17
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
@@ -1312,8 +1312,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.5.16:
-    resolution: {integrity: sha512-1nOVsMq2OJiXnG6gO0Y77vTAboGN9nLQSy/8SGazq4h6x+alzbsMbQbArBgvaLzOSUXD0m91XLs3D8bOSuavrQ==}
+  /astro@4.5.17:
+    resolution: {integrity: sha512-fr5onZt7MOe+6v08Ub1AZL9eUVo4f0y0nvL55AFMpVG2bMM1/omcwAH1uU2mkvwMLLtcd4RDtYz4mtJzd54Nfw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
