@@ -7,13 +7,13 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^10.0.3
-    version: 10.0.3(astro@4.5.16)
+    version: 10.0.3(astro@4.5.18)
   '@iconify-json/material-symbols':
     specifier: ^1.1.76
     version: 1.1.76
   astro:
     specifier: ^4.5.5
-    version: 4.5.16
+    version: 4.5.18
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
@@ -48,7 +48,7 @@ packages:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: false
 
-  /@astrojs/cloudflare@10.0.3(astro@4.5.16):
+  /@astrojs/cloudflare@10.0.3(astro@4.5.18):
     resolution: {integrity: sha512-ERK1Na7sAFqcs8H9bAvBa3V+RbsFgkImZyRWrgCE62/mXNfCuLyc+sF32RMksWSMJOPrZRjXJz5I5IpCr4JUTA==}
     peerDependencies:
       astro: ^4.2.0
@@ -56,7 +56,7 @@ packages:
       '@astrojs/internal-helpers': 0.3.0
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20240405.0
-      astro: 4.5.16
+      astro: 4.5.18
       esbuild: 0.19.12
       miniflare: 3.20240404.0
       tiny-glob: 0.2.9
@@ -1652,8 +1652,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.5.16:
-    resolution: {integrity: sha512-1nOVsMq2OJiXnG6gO0Y77vTAboGN9nLQSy/8SGazq4h6x+alzbsMbQbArBgvaLzOSUXD0m91XLs3D8bOSuavrQ==}
+  /astro@4.5.18:
+    resolution: {integrity: sha512-iytLnUfyUneKMjIQdj79zzniByXtcmGNDobIV/gjGsatC9vAyPqeCT8TbMqfkRBMeYGs+S/wCzSoPqaaMJiQnw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
