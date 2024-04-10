@@ -1,0 +1,20 @@
+---
+export const prerender = false;
+import {format} from 'timeago.js';
+import {Icon} from "astro-icon/components";
+interface Props {
+    pubDate: Date,
+    modDate?: Date
+}
+const {pubDate, modDate} = Astro.props;
+---
+{pubDate &&
+<div>
+    <Icon name="material-symbols:calendar-today-outline-rounded"/>
+    <i>Publish at: {pubDate.toUTCString()} ({format(pubDate)})</i>
+</div>}
+{modDate &&
+<div>
+    <Icon name="material-symbols:edit-calendar-outline-rounded"/>
+    <i>Last edit at: {modDate.toUTCString()} ({format(modDate)})</i>
+</div>}

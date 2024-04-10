@@ -3,29 +3,18 @@ import {Icon} from "astro-icon/components"
 import styles from "../styles/components/title.module.css"
 
 import {postType} from "../content/posts/config";
+import TitleDateTime from "./titleDateTime.astro";
 const data: postType = Astro.props.data
 ---
-<h1>{data.title}</h1>
+<h1>{data.title || "Untitled"}</h1>
 <div class={styles.info}>
     {data.author && <div>
         <Icon name="material-symbols:person-edit-outline-rounded"/>
         <i>Author: {data.author}</i>
     </div>}
-    <div>
-        <Icon name="material-symbols:calendar-today-outline-rounded"/>
-        <i>Publish at: <span class="pub-time">{data.pubDate.toISOString()}</span>
-            <span class="pub-duration"></span></i>
-    </div>
-    {data.modDate &&
-            <div>
-                <Icon name="material-symbols:edit-calendar-outline-rounded"/>
-                <i>Last edit at: <span class="mod-time">{data.modDate.toISOString()}</span>
-                    <span class="mod-duration"></span></i>
-            </div>}
+    <TitleDateTime pubDate={data.pubDate} modDate{data.modDate} />
 </div>
-<details>
+{data.description && <details>
     <summary>Description</summary>
     {data.description}
-</details>
-
-<script src="./postTitle.ts"></script>
+</details>}
