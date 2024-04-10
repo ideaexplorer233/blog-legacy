@@ -10,7 +10,7 @@ dependencies:
     version: 10.0.3(astro@4.5.16)
   '@iconify-json/material-symbols':
     specifier: ^1.1.76
-    version: 1.1.76
+    version: 1.1.77
   astro:
     specifier: ^4.5.5
     version: 4.5.16
@@ -1063,8 +1063,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@iconify-json/material-symbols@1.1.76:
-    resolution: {integrity: sha512-U3S0n2eENEZmAK+b+zvNBPxHySm7eo9bFQaKODlbrFyjNfaZVwpQMs7pZ3ZmeX9YLp0CtV8XqzmRb2YdhLJIkQ==}
+  /@iconify-json/material-symbols@1.1.77:
+    resolution: {integrity: sha512-b+jAkZKxBrGXXV76psToCGYVzu2IzyM8fxgiLOc6uPLB3R4vhrQGKT1J3wH9JnURShwQenEVPVNWetr5sj0Trg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
