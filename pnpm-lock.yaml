@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^10.0.3
-    version: 10.0.3(astro@4.5.16)
+    version: 10.1.0(astro@4.5.16)
   '@iconify-json/material-symbols':
     specifier: ^1.1.76
     version: 1.1.76
@@ -48,8 +48,8 @@ packages:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: false
 
-  /@astrojs/cloudflare@10.0.3(astro@4.5.16):
-    resolution: {integrity: sha512-ERK1Na7sAFqcs8H9bAvBa3V+RbsFgkImZyRWrgCE62/mXNfCuLyc+sF32RMksWSMJOPrZRjXJz5I5IpCr4JUTA==}
+  /@astrojs/cloudflare@10.1.0(astro@4.5.16):
+    resolution: {integrity: sha512-26+mkkMNQ7lHQ9wEwPxNS/zUEZj/emYkHTmlmvgzkEq9J/vFI5QVtTur2R/ZIZ8SimpLqZJtsn584716Jqq1Nw==}
     peerDependencies:
       astro: ^4.2.0
     dependencies:
