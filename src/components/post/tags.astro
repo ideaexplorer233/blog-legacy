@@ -1,0 +1,19 @@
+---
+interface Props {
+    tags?: Array<string>;
+}
+const { tags } = Astro.props;
+import styles from "../../styles/components/tags.module.css";
+---
+
+<ul class={styles.tags}>
+    {
+        tags?.map((tag) => (
+            <>
+                <li>
+                    <a href={"./posts/tags/" + tag}>{tag}</a>
+                </li>
+            </>
+        ))
+    }
+</ul>

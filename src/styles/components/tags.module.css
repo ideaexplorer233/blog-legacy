@@ -1,0 +1,11 @@
+.tags {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+    > li {
+        display: inline-block;
+        + li::before {
+            content: ", ";
+        }
+    }
+}

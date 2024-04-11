@@ -10,8 +10,8 @@
 }
 
 .nav {
-    list-style-type: none;
     display: inline-block;
+    list-style-type: none;
 
     > ul > li {
         display: inline;
