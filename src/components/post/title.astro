@@ -1,0 +1,27 @@
+---
+import { Icon } from "astro-icon/components";
+import styles from "../../styles/components/title.module.css";
+
+import { type postType } from "../../content/posts/config";
+import TitleDateTime from "./dateTime.astro";
+import Tags from "./tags.astro";
+const data: postType = Astro.props.data;
+---
+
+<h1>{data.title || "Untitled"}</h1>
+<div class={styles.info}>
+    {
+        data.author && (
+            <div>
+                <Icon name="material-symbols:person-edit-outline-rounded" />
+                <i>Author: {data.author}</i>
+            </div>
+        )
+    }
+    <TitleDateTime pubDate={data.pubDate} modDate={data.modDate} />
+</div>
+<details>
+    <summary>Details</summary>
+    <p>Description: {data.description}</p>
+    <p>Tags: <Tags tags={data.tags} /></p>
+</details>
