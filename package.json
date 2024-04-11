@@ -17,6 +17,9 @@
     "@iconify-json/material-symbols": "^1.1.76",
     "astro": "^4.5.5",
     "astro-icon": "^1.1.0",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "postcss-preset-env": "^9.5.4",
     "sharp": "^0.33.3",
     "timeago.js": "^4.0.2"
   },
