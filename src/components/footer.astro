@@ -7,10 +7,5 @@ import "../styles/components/footer.module.css";
     <a href="https://creativecommons.org/licenses/by-sa/4.0/"
         >CC BY-SA 4.0 Deed</a
     >
-    <p class="current-time"></p>
+    <p class="current-time">Built at {new Date(Date.now()).toISOString()}</p>
 </footer>
-
-<script>
-    document.getElementsByClassName("current-time")[0].innerHTML =
-        "Current ISO Time: " + new Date(Date.now()).toISOString();
-</script>

@@ -17,7 +17,7 @@ const data: postType = Astro.props.data;
             </div>
         )
     }
-    <TitleDateTime pubDate={data.pubDate} />
+    <TitleDateTime pubDate={data.pubDate} modDate={data.modDate}/>
 </div>
 {
     data.description && (

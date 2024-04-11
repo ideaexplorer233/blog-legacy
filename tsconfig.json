@@ -1,6 +1,8 @@
 {
-  "extends": "astro/tsconfigs/strictest",
-  "compilerOptions": {
-    "allowJs": true
-  }
+    "extends": "astro/tsconfigs/strictest",
+    "compilerOptions": {
+        "allowJs": true,
+        // Type that infered by Zod is not ?:, it will be Type|undefined , so it's necessary to disable this
+        "exactOptionalPropertyTypes": false
+    }
 }

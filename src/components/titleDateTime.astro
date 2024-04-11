@@ -3,8 +3,8 @@ export const prerender = false;
 import { format } from "timeago.js";
 import { Icon } from "astro-icon/components";
 interface Props {
-    pubDate: Date;
-    modDate: Date;
+    pubDate?: Date;
+    modDate?: Date;
 }
 const { pubDate, modDate } = Astro.props;
 ---
