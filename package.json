@@ -17,8 +17,10 @@
     "@iconify-json/material-symbols": "^1.1.76",
     "astro": "^4.5.5",
     "astro-icon": "^1.1.0",
-    "dayjs": "^1.11.10",
     "sharp": "^0.33.3",
     "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "prettier": "3.2.5"
   }
 }
