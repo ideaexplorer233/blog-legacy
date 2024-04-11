@@ -1,9 +1,10 @@
 ---
 import styles from "../styles/components/header.module.css";
+import { config } from "../config";
 ---
 
 <header class={styles.header}>
-    <a href="/" class={styles.title}>DigitalWolf</a>
+    <a href="/" class={styles.title}>{config.siteName}</a>
     <nav class={styles.nav}>
         <ul>
             <li><a href="/posts">Posts</a></li>
