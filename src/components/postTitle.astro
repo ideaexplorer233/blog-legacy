@@ -1,10 +1,10 @@
 ---
-import { Icon } from "astro-icon/components"
-import styles from "../styles/components/title.module.css"
+import { Icon } from "astro-icon/components";
+import styles from "../styles/components/title.module.css";
 
-import { postType } from "../content/posts/config"
-import TitleDateTime from "./titleDateTime.astro"
-const data: postType = Astro.props.data
+import { type postType } from "../content/posts/config";
+import TitleDateTime from "./titleDateTime.astro";
+const data: postType = Astro.props.data;
 ---
 
 <h1>{data.title || "Untitled"}</h1>
@@ -17,7 +17,7 @@ const data: postType = Astro.props.data
             </div>
         )
     }
-    <TitleDateTime pubDate={data.pubDate} modDate={data.modDate} />
+    <TitleDateTime pubDate={data.pubDate} />
 </div>
 {
     data.description && (
