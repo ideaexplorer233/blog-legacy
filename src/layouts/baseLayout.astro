@@ -1,18 +1,23 @@
 ---
-import "../styles/global.css"
+import { ViewTransitions } from "astro:transitions";
 
-import Header from "../components/base/header.astro"
-import Footer from "../components/base/footer.astro"
-import Meta from "../components/base/meta.astro"
+import "../styles/global.css";
 
-const { title } = Astro.props
+import Header from "../components/base/header.astro";
+import Footer from "../components/base/footer.astro";
+import Meta from "../components/base/meta.astro";
+
+const { title } = Astro.props;
 ---
 
 <html>
-    <Meta title={title} />
+    <head>
+        <Meta title={title} />
+        <ViewTransitions />
+    </head>
     <body>
         <Header />
-        <main>
+        <main transition:animate="fade">
             <slot />
         </main>
         <Footer />
