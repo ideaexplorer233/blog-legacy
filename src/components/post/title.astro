@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon/components";
 import styles from "../../styles/components/title.module.css";
 
-import { type postType } from "../../content/posts/config";
+import type { postType } from "../../content/posts/config";
 import TitleDateTime from "./dateTime.astro";
 import Tags from "./tags.astro";
 const data: postType = Astro.props.data;
@@ -20,9 +20,8 @@ const data: postType = Astro.props.data;
     }
     <TitleDateTime pubDate={data.pubDate} modDate={data.modDate} />
 </div>
-<details open="true">
+<details open="true" class={styles.detail}>
     <summary>Details</summary>
     <p>Description: {data.description}</p>
-    {/* FIXME:Tags will somehow escape the <p> tag */}
-    <p>Tags: <Tags tags={data.tags} /></p>
+    <div><span>Tags:</span><Tags tags={data.tags} /></div>
 </details>
