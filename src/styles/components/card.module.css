@@ -1,0 +1,7 @@
+.card {
+    width: 100%;
+    transition: background-color var(--animation-speed);
+    &:hover {
+        background-color: var(--link-hover);
+    }
+}

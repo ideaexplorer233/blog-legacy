@@ -1,8 +1,8 @@
 ---
-import BaseLayout from "./baseLayout.astro"
-import { type postType } from "../content/posts/config"
-import Title from "../components/post/title.astro"
-const frontmatter: postType = Astro.props["frontmatter"]
+import BaseLayout from "./baseLayout.astro";
+import type { postType } from "../content/posts/config";
+import Title from "../components/post/title.astro";
+const frontmatter: postType = Astro.props["frontmatter"];
 ---
 
 <BaseLayout title={frontmatter.title}>
