@@ -3,19 +3,23 @@
     padding: 10px;
     border-radius: 6px;
 
-    transition: background-color var(--animation-speed);
+    transition-duration: var(--animation-speed);
+    transition: background-color;
     &:hover {
         background-color: var(--link-hover);
     }
     &:active {
         box-shadow: 0 0 0 2px var(--focus);
+        transform: translateY(2px);
     }
+
     > a {
         text-decoration-line: none;
         > h2 {
             margin: 0px;
         }
-        > p, div{
+        > p,
+        div {
             color: var(--text-deep);
             margin: 0px;
         }

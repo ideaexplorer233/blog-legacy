@@ -1,0 +1,38 @@
+---
+// TODO: Filter controls
+export function getStaticPaths() {
+    return [
+        { params: { search: "pubDate", order: "asc" } },
+        { params: { search: "pubDate", order: "desc" } },
+        { params: { search: "modDate", order: "asc" } },
+        { params: { search: "modDate", order: "desc" } },
+        { params: { search: "title", order: "asc" } },
+        { params: { search: "title", order: "desc" } },
+    ];
+}
+
+import PostList from "./post/index.astro";
+const { search, order } = Astro.params;
+
+let cmp: (a: any, b: any) => number;
+
+switch (search) {
+    case "modTime":
+        cmp = (a, b) => a.data.pubDate - b.data.pubDate;
+        break;
+    case "title":
+        cmp = (a, b) => a.data.pubDate - b.data.pubDate;
+        break;
+    default:
+        // pubTime
+        cmp = (a, b) => b.data.pubDate - a.data.pubDate;
+}
+
+if (order == "desc") {
+    // If descending order is required, reverse
+    const originalCmp = cmp;
+    cmp = (a, b) => originalCmp(b, a);
+}
+---
+
+<PostList sort={cmp} />

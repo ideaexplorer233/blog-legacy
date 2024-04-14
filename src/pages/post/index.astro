@@ -3,13 +3,17 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/baseLayout.astro";
 import PostCard from "../../components/post/postCard.astro";
 
+interface Props {
+    sort?: (a: any, b: any) => number;
+}
+const { sort = (a, b) => b.data.pubDate - a.data.pubDate } = Astro.props;
+
 const allPosts = await getCollection("posts");
-allPosts.sort((a, b) => b.data.pubDate - a.data.pubDate);
-console.log(allPosts);
+allPosts.sort(sort);
 ---
 
 <BaseLayout title="Posts">
-    <h1>Posts list</h1>
+    <h1>Posts</h1>
     <ul style="list-style: none; padding: 0px;">
         {
             allPosts.map((post) => (
@@ -19,4 +23,5 @@ console.log(allPosts);
             ))
         }
     </ul>
+    <button>Click me</button>
 </BaseLayout>
