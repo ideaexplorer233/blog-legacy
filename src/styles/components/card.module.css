@@ -1,7 +1,27 @@
 .card {
-    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+
     transition: background-color var(--animation-speed);
     &:hover {
         background-color: var(--link-hover);
+    }
+    &:active {
+        box-shadow: 0 0 0 2px var(--focus);
+    }
+    > a {
+        text-decoration-line: none;
+        > h2 {
+            margin: 0px;
+        }
+        > p, div{
+            color: var(--text-deep);
+            margin: 0px;
+        }
+        > div {
+            display: inline;
+            margin-right: 10px;
+        }
     }
 }

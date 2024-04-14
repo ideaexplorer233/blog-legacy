@@ -4,8 +4,9 @@ interface Props {
     pubDate?: Date;
     modDate?: Date;
     language?: string;
+    mini?: boolean;
 }
-const { pubDate, modDate, language = "en-US" } = Astro.props;
+const { pubDate, modDate, language = "en-US", mini = false } = Astro.props;
 ---
 
 {
@@ -13,7 +14,7 @@ const { pubDate, modDate, language = "en-US" } = Astro.props;
         <div>
             <Icon name="material-symbols:calendar-today-outline-rounded" />
             <i class="pub" title={pubDate.toISOString()}>
-                Publish on:
+                {!mini && " Published on: "}
                 {pubDate.toLocaleDateString(language)}
             </i>
         </div>
@@ -24,7 +25,7 @@ const { pubDate, modDate, language = "en-US" } = Astro.props;
         <div>
             <Icon name="material-symbols:edit-calendar-outline-rounded" />
             <i class="mod" title={modDate.toISOString()}>
-                Last edit on:
+                {!mini && " Last edited on: "}
                 {modDate.toLocaleDateString(language)}
             </i>
         </div>

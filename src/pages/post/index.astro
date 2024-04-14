@@ -4,9 +4,19 @@ import BaseLayout from "../../layouts/baseLayout.astro";
 import PostCard from "../../components/post/postCard.astro";
 
 const allPosts = await getCollection("posts");
+allPosts.sort((a, b) => b.data.pubDate - a.data.pubDate);
+console.log(allPosts);
 ---
 
 <BaseLayout title="Posts">
     <h1>Posts list</h1>
-    {allPosts.map((post) => <PostCard data={post} />)}
+    <ul style="list-style: none; padding: 0px;">
+        {
+            allPosts.map((post) => (
+                <li>
+                    <PostCard data={post} />
+                </li>
+            ))
+        }
+    </ul>
 </BaseLayout>

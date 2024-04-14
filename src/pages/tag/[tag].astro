@@ -24,9 +24,9 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BaseLayout title={tag}>
-    <p>Posts tagged with {tag}</p>
-    <ul>
+<BaseLayout title={"#" + tag}>
+    <h1>Posts tagged with <i>#{tag}</i></h1>
+    <ul style="list-style: none; padding: 0px;">
         {posts.map((post) => <PostCard data={post} />)}
     </ul>
 </BaseLayout>

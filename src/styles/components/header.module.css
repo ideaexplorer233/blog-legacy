@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-
 .title {
-    font-family: "Pixelify Sans", ui-monospace, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
     font-weight: bold;
     margin: auto 0 auto 0;
@@ -21,5 +19,4 @@
 
 .header {
     width: 100%;
-    display: inline;
 }

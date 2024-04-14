@@ -30,11 +30,19 @@ blockquote, q {
     margin: 1.5em 0;
     padding: 0.5em 1em;
     font-style: italic;
-}
-
-blockquote > footer {
-    font-style: normal;
-    border: 0;
+    /* Astro will: <blockquote><p></p></blockquote>
+        So we got this rule. */
+    > p {
+        margin: 0px;
+    }
+    > blockquote {
+        margin: 0px;
+    }
+    /* I don't know what is that for */
+    > footer {
+        font-style: normal;
+        border: 0;
+    }
 }
 
 blockquote cite {
