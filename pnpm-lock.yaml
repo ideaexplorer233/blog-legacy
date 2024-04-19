@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^10.1.0
-    version: 10.2.0(astro@4.6.0)
+    version: 10.2.0(astro@4.6.3)
   '@astrojs/rss':
     specifier: ^4.0.5
     version: 4.0.5
@@ -16,7 +16,7 @@ dependencies:
     version: 1.1.78
   astro:
     specifier: ^4.6.0
-    version: 4.6.0
+    version: 4.6.3
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
@@ -62,7 +62,7 @@ packages:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: false
 
-  /@astrojs/cloudflare@10.2.0(astro@4.6.0):
+  /@astrojs/cloudflare@10.2.0(astro@4.6.3):
     resolution: {integrity: sha512-Mtu28fL0aj9P96ub8UeRyOtNfjMYdj68aEuM8TouFEDYung7qK2mJaeeamp4muc/gDeEUGiQ0lZcKkKXGl2vqw==}
     peerDependencies:
       astro: ^4.2.0
@@ -70,7 +70,7 @@ packages:
       '@astrojs/internal-helpers': 0.3.0
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20240405.0
-      astro: 4.6.0
+      astro: 4.6.3
       esbuild: 0.19.12
       miniflare: 3.20240405.1
       tiny-glob: 0.2.9
@@ -1960,6 +1960,10 @@ packages:
       '@types/node': 20.12.7
     dev: false
 
+  /@types/cookie@0.5.4:
+    resolution: {integrity: sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==}
+    dev: false
+
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
     dependencies:
@@ -2118,8 +2122,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.6.0:
-    resolution: {integrity: sha512-zys+COED1Zs/PurkgAFc/f93e2jACMv7XeC+CyDNBgdE9v2b7rlVPRu054j2nTrQTzGQ7kst2/waQrDbs6e1aA==}
+  /astro@4.6.3:
+    resolution: {integrity: sha512-p2zs1Gac+ysdc/yFCoc8pOXTZE5L9foAtmqUzUVL22WX68bYTRovd03GRs7J1MDpwzsl9kJtlK20ROpjyIFpNw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -2134,6 +2138,7 @@ packages:
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
       '@types/babel__core': 7.20.5
+      '@types/cookie': 0.5.4
       acorn: 8.11.3
       aria-query: 5.3.0
       axobject-query: 4.0.0
@@ -2636,7 +2641,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: false
 
   /css-tree@2.3.1:
@@ -2644,7 +2649,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: false
 
   /css-what@6.1.0:
@@ -5539,11 +5544,6 @@ packages:
 
   /sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
-    dev: false
-
-  /source-map-js@1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
     dev: false
 
   /source-map-js@1.2.0:
