@@ -1,7 +1,7 @@
 ---
 import type { postType } from "../../content/posts/config";
 import style from "../../styles/components/card.module.css";
-import DateTime from "./dateTime.astro";
+import DateTime from "../post/DateTime.astro";
 const post: postType = Astro.props.data.data;
 const slug: string = Astro.props.data.slug;
 ---

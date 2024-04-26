@@ -17,14 +17,14 @@ const { search, order } = Astro.params;
 let cmp: (a: any, b: any) => number;
 
 switch (search) {
-    case "modTime":
+    case "modDate":
         cmp = (a, b) => a.data.pubDate - b.data.pubDate;
         break;
     case "title":
         cmp = (a, b) => a.data.pubDate - b.data.pubDate;
         break;
     default:
-        // pubTime
+        // pubDate
         cmp = (a, b) => b.data.pubDate - a.data.pubDate;
 }
 
