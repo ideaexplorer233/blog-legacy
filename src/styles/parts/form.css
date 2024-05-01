@@ -90,6 +90,11 @@ select[multiple] {
     overflow-y: auto;
 }
 
+/* Hide the triangle that points downward in IE */
+/* select::-ms-expand {
+    display: none;
+} */
+
 /* Hover */
 button:hover,
 input[type="submit"]:hover,
