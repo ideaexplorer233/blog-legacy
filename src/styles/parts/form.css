@@ -76,21 +76,18 @@ textarea:not([rows]) {
     height: 140px;
 }
 
+/*
 select {
     background: var(--background) var(--select-arrow) calc(100% - 12px) 50% /
         12px no-repeat;
     padding-right: 35px;
 }
+*/
 
 select[multiple] {
     padding-right: 10px;
     background-image: none;
     overflow-y: auto;
-}
-
-/* Hide the triangle that points downward in IE */
-select::-ms-expand {
-    display: none;
 }
 
 /* Hover */
