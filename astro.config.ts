@@ -2,13 +2,15 @@
 
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
-
 import cloudflare from "@astrojs/cloudflare";
+import svelte from "@astrojs/svelte";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    // output: "hybrid",
-    // adapter: cloudflare(),
+    output: "hybrid",
+    adapter: cloudflare(),
     integrations: [
         icon({
             include: {
@@ -18,6 +20,17 @@ export default defineConfig({
                     "calendar-today-outline-rounded",
                     "edit-calendar-outline-rounded",
                 ],
+            },
+        }),
+        svelte(),
+        sitemap({
+            filter: (page) => !page.endsWith("secret-page"),
+            i18n: {
+                defaultLocale: "en",
+                locales: {
+                    en: "en-US",
+                    zh: "zh-Hans-CN",
+                },
             },
         }),
     ],
@@ -32,5 +45,12 @@ export default defineConfig({
             config: {},
         },
     },
-    site: "https://example.com", // TODO:change in product version
+    i18n: {
+        defaultLocale: "en",
+        locales: ["es", "zh"],
+        routing: {
+            prefixDefaultLocale: false,
+        },
+    },
+    site: "https://example.com", // TODO:change in product release
 });
