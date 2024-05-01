@@ -1,3 +1,4 @@
 export const config = {
-    siteName: "Arcric"
-}
+    siteName: "Arcric",
+    siteDescription: "An blog on arcric land!",
+};

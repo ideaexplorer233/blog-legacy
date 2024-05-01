@@ -7,6 +7,9 @@ import Header from "../components/base/Header.astro";
 import Footer from "../components/base/Footer.astro";
 import Meta from "../components/base/Meta.astro";
 
+import type { Metadata } from "../components/base/meta";
+type Props = Metadata;
+
 const { title } = Astro.props;
 ---
 
