@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostCard from "../../components/list/PostCard.astro";
-import Filter from "../../components/list/Filter.astro";
+import Filter from "../../components/list/filter.svelte";
 interface Props {
     sort?: (a: any, b: any) => number;
 }
@@ -14,7 +14,7 @@ allPosts.sort(sort);
 
 <BaseLayout title="Posts">
     <h1 transition:persist>Posts</h1>
-    <Filter transition:persist />
+    <Filter load:client transition:persist />
     <ul style="list-style: none; padding: 0px;">
         {
             allPosts.map((post) => (

@@ -1,5 +1,5 @@
 ---
-import type { Metadata } from "./meta";
+import type { Metadata } from "./meta.ts";
 
 type Props = Metadata;
 
@@ -17,7 +17,7 @@ const {
 const theme_color = "#1c74ee";
 const url = Astro.url;
 
-import { getMetaLangTag } from "./meta";
+import { getMetaLangTag } from "./meta.ts";
 const metaLangTag = getMetaLangTag(language);
 ---
 
