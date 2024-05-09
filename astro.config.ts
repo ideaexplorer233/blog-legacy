@@ -47,10 +47,7 @@ export default defineConfig({
     },
     i18n: {
         defaultLocale: "en",
-        locales: ["es", "zh"],
-        routing: {
-            prefixDefaultLocale: false,
-        },
+        locales: ["en", "zh"],
     },
     site: "https://example.com", // TODO:change in product release
 });

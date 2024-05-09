@@ -13,23 +13,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/cloudflare": "^10.2.4",
+    "@astrojs/cloudflare": "^10.2.5",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/svelte": "^5.4.0",
     "@iconify-json/material-symbols": "^1.1.79",
-    "astro": "^4.7.0",
+    "astro": "^4.7.1",
     "astro-icon": "^1.1.0",
     "autoprefixer": "^10.4.19",
     "cssnano": "^6.1.2",
-    "postcss-preset-env": "^9.5.9",
+    "postcss-preset-env": "^9.5.11",
     "sharp": "^0.33.3",
-    "svelte": "^4.2.15",
+    "svelte": "^4.2.16",
     "timeago.js": "^4.0.2",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
     "prettier": "3.2.5",
-    "svelte-check": "^3.7.0"
+    "svelte-check": "^3.7.1"
   }
 }
