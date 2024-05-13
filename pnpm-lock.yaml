@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^10.2.5
-    version: 10.2.5(astro@4.7.1)
+    version: 10.2.6(astro@4.7.1)
   '@astrojs/rss':
     specifier: ^4.0.5
     version: 4.0.5
@@ -76,8 +76,8 @@ packages:
     resolution: {integrity: sha512-rWQkqXRESdjXtc+7NRfK9lASQjpXJu1ayp7qi1d23zZorY+wBHVLHHoVcMsEnkqEBWTFqbztO7/QdJFzyEcLTg==}
     dev: false
 
-  /@astrojs/cloudflare@10.2.5(astro@4.7.1):
-    resolution: {integrity: sha512-5tKPU5m/zYwz2CU9vCSKo4tgWsdD7xwpUlDkVbKPwgSkfVB6ZuXb8ffLYnahtUc1Gvh7HgaBSaagPVHGCp73WQ==}
+  /@astrojs/cloudflare@10.2.6(astro@4.7.1):
+    resolution: {integrity: sha512-pgAT9+D866T/ER/L1+t2HvTtJzWhnZF7h7g2ur2ssv3AriJsXrS+Pny6ZTLYY11tuCx7GNxjY4H0jz1AOxuLig==}
     peerDependencies:
       astro: ^4.2.0
     dependencies:
